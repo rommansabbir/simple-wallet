@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bdc3c7"
+    tools:context=".TransactionLogActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/reportsCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:background="@drawable/listviewborder"
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                    <ListView
+                        android:id="@+id/transactionLogLV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:listSelector="#48C8C2"
+                        android:dividerHeight="2dp">
+                    </ListView>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
